@@ -1,0 +1,296 @@
+/* ここから下に記載していく */
+
+/* 大枠ボックス */
+.layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* 背景画像の読み込み */
+.layer-bg {
+  background-image: url("../img/mainbg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+}
+
+/* 重ねる文字の基本設定 */
+.layer-txt {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  letter-spacing: 0.4rem;
+}
+
+/* SP向けの設定 */
+/* @media screen and (max-width: 600px) { */
+/* .layer-txt{ */
+/* font-size: 1.4rem; */
+/* padding: 4rem 0; */
+/* } */
+/* } */
+
+/* PC向けの設定 */
+@media screen and (min-width: 601px) {
+  .layer-txt {
+    font-size: 2rem;
+    padding: 8rem 0;
+  }
+}
+
+
+
+.left {
+  /* 左寄せ */
+  text-align: left;
+}
+
+.right {
+  /* 右寄せ */
+  text-align: right;
+}
+
+p {
+  text-align: center
+}
+
+.honbun {
+  /* 本文のフォントサイズ */
+  font-size: 16px;
+}
+
+.etitle {
+  /* 英語タイトルのフォントサイズ */
+  font-size: 24px;
+}
+
+.jtitle {
+  /*日本語タイトルのフォントサイズ */
+  font-size: 18px;
+}
+
+/* 横並び */
+
+.fleximageleft {
+  display: flex;
+  /*横並び*/
+}
+
+.fleximageleft .image {
+  width: 640px;
+  /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.fleximageleft .right {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+/* 
+   .flex .left { 
+    margin: 600px 600px 0 20px;
+    padding: 0;
+  }
+    */
+.fleximageleft .title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.fleximageleft .text {
+  margin: 10px 0 0;
+  padding: 0;
+  width: 480px;
+}
+
+.fleximageright {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* Align items to the start of the container */
+}
+
+.fleximageright .image {
+  order: 2;
+  /* Position the image second */
+  margin-left: 20px;
+  /* Add some space between the text and the image */
+}
+
+.fleximageright .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fleximageright .left {
+  order: 1;
+  /* Position the text first */
+  flex: 1;
+  /* Allow the text container to take up the remaining space */
+}
+
+.fleximageright .title {
+  font-size: 24px;
+  /* Example font size */
+  font-weight: bold;
+  /* Example font weight */
+  margin-top: 120px;
+  /* Inline style from the example */
+}
+
+.fleximageright .text {
+  font-size: 16px;
+  /* Example font size */
+  margin-top: 40px;
+  /* Inline style from the example */
+}
+
+.yellowbox {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffd61a;
+  width: 300px;
+  min-height: 60px;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.graybox {
+  margin-top: 170px;
+  background-color: #707070;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.container2 {
+  display: grid;
+  place-items: center;
+  height: 60px;
+}
+
+.center-text {
+  background-color: #ffd61a;
+  color: white;
+  width: 300px;
+  text-align: center;
+}
+
+.container2:hover .center-text {
+  display: grid;
+  place-items: center;
+  height: 60px;
+  background-color: orange;
+  /* 例: 背景色を変更 */
+  color: #ffffff;
+  /* 例: テキストの色を変更 */
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 120px 64px 300px;
+  grid-template-rows: 30px 30px 30px 50px 150px 100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 120px 64px 330px;
+  /* 3列のグリッド */
+  gap: 0px;
+  /* グリッドアイテム間の隙間 */
+  padding: 5px;
+}
+
+.grid-item {
+  background-color: white;
+  padding: 2px;
+  text-align: center;
+  /* border: 0.001rem solid #777575; */
+  /* 枠線の設定 */
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 120px 330px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  /* 2列のグリッド */
+  gap: 0px;
+  /* グリッドアイテム間の隙間 */
+  padding: 5px;
+}
+
+.grid-item2 {
+  background-color: white;
+  padding: 2px;
+  text-align: start;
+  
+}
+/* .left-align { 
+  display: flex;
+  align-items: center;
+}
+*/
+
+.left-align {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.grid-item {
+  margin-bottom: 10px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.container3 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-distance {
+  position: absolute;
+  left: 50%; /* ページの横のセンター */
+  transform: translateX(-50%); /* 要素を左に50%移動して中央揃え */
+  margin-left: 50px; /* 横の距離を指定 */
+}
+
+.zoom-in-img {
+  max-width: 320px;
+  height:213px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+.zoom-in-img img {
+  width: 100%;
+  height: 100%;
+}
+/*ホバーエフェクト*/
+.zoom-in-img img {
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+.zoom-in-img:hover img {
+  transform: scale(1.3);
+}
